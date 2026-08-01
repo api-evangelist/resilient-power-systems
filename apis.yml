@@ -1,8 +1,24 @@
 aid: resilient-power-systems
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/resilient-power-systems.png
 name: Resilient Power Systems
-description: Resilient Power Systems is a company surfaced as a portfolio company of techstars and added
-  to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment
-  pipeline.
+description: Resilient Power Systems is a power-electronics hardware company known for solid-state
+  and medium-voltage power distribution and conversion systems, including solid-state transformers
+  for grid, EV fast-charging, and industrial applications. The company was surfaced as a Techstars
+  portfolio company. As of this enrichment pass its web presence (resilientpower.com) has moved and
+  now redirects to Eaton, following acquisition; the company publishes no developer portal, API,
+  documentation, SDKs, or other API-consumable surface, so this profile is identity-only. Enrichment
+  probes confirmed the redirect and captured live domain-security posture for the remaining host.
 url: https://raw.githubusercontent.com/api-evangelist/resilient-power-systems/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,15 +28,28 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
+- Power Electronics
+- Energy
+- Hardware
+- EV Charging
+- Electrical Grid
+- Manufacturing
 apis: []
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
 common:
+- type: DomainSecurity
+  url: security/resilient-power-systems-domain-security.yml
 - type: Website
   url: https://resilientpower.com/
